@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How Transactions Work - Blockchain Learning Center</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Blockchain Learning Center</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="what-is-blockchain.html">What is Blockchain?</a></li>
+            <li><a href="how-transactions-work.html">How Transactions Work</a></li>
+            <li><a href="three-pillars.html">The Three Pillars</a></li>
+            <li><a href="blockchain-vs-databases.html">Blockchain vs. Databases</a></li>
+            <li><a href="real-world-uses.html">Real-World Uses</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <h2>How Does a Blockchain Transaction Actually Work?</h2>
+        <p>
+            A transaction on a blockchain is a process with several steps. It's not just a simple "send" button; it's a secure and verifiable process. Let's walk through it. <i>It's quite fascinating!</i>
+        </p>
+
+        <h3>The Lifecycle of a Transaction</h3>
+        <ol>
+            <li><b>Initiation</b>: A user initiates a transaction using their digital wallet.</li>
+            <li><b>Broadcast</b>: The transaction is broadcast to the peer-to-peer (P2P) network.</li>
+            <li><b>Validation</b>: Nodes on the network validate the transaction and the user's status.</li>
+            <li><b>Block Creation</b>: The validated transaction is bundled with others into a new block.</li>
+            <li><b>Confirmation</b>: The new block is added to the blockchain, and the transaction is complete.</li>
+        </ol>
+
+        <h4>A Closer Look at Validation</h4>
+        <p>Validation is a critical step. <u>Each node in the network checks the transaction's validity</u>. This prevents fraud. This is not done by a central authority. <s>A bank approves it</s>. <del>An admin checks it</del>. It's the network itself that provides the trust.</p>
+        <pre>
+        Transaction {
+          from: "UserA",
+          to: "UserB",
+          amount: 1.23,
+          signature: "..."
+        }
+        </pre>
+
+        <h5>Transaction is Final</h5>
+        <p>Once a transaction is in a block, it is <mark>permanent and cannot be altered</mark>. This is the immutability we talked about. This is a core feature, not a bug<sub>[1]</sub>.</p>
+
+        <h6>Key Terms</h6>
+        <table border="1">
+            <tr>
+                <th>Term</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>Node</td>
+                <td>A computer connected to the blockchain network.</td>
+            </tr>
+            <tr>
+                <td>Digital Signature</td>
+                <td>A cryptographic way to prove ownership.</td>
+            </tr>
+        </table>
+        <br>
+        <p><span>This entire process is what makes the system secure.</span> Want to learn more? Here is an <a href="https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-transaction" target="_blank">external article</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Blockchain Learning Center</p>
+    </footer>
+
+</body>
+</html>
