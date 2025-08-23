@@ -1,0 +1,110 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered container for the main content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Make nav horizontal */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 10%; /* Give it some space from the sides */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Text Formatting Tag Styles */
+mark {
+    background-color: yellow;
+    color: black;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    font-family: monospace; /* Use a different font for fun */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Preformatted Text Style */
+pre {
+    background-color: #eee;
+    padding: 10px;
+    overflow: auto; /* Handle overflow if content is wide */
+}
