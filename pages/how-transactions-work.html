@@ -23,53 +23,59 @@
 
     <div class="main-content">
         <h2>How Does a Blockchain Transaction Actually Work?</h2>
+        <p>Understanding how a blockchain transaction works is key to grasping this technology. It's like sending an email, but with extra steps to ensure it's <b>secure</b>, <i>verified</i>, and <u>permanent</u>. We'll break it down step by step.</p>
 
         <table class="content-table">
             <tr>
-                <td class="td-heading"><h3>The Lifecycle</h3></td>
+                <td class="td-heading"><h3>Step 1: Creating & Signing</h3></td>
                 <td>
-                    A transaction on a blockchain is a process with several steps. It's not just a simple "send" button; it's a <i>secure and verifiable process</i>.
+                    Everything starts when someone wants to send something using a digital wallet.
                     <ol>
-                        <li><b>Initiation</b>: A user initiates a transaction using their digital wallet.</li>
-                        <li><b>Broadcast</b>: The transaction is broadcast to the peer-to-peer (P2P) network.</li>
-                        <li><b>Validation</b>: Nodes on the network validate the transaction and the user's status.</li>
-                        <li><b>Block Creation</b>: The validated transaction is bundled with others into a new block.</li>
-                        <li><b>Confirmation</b>: The new block is added to the blockchain, and the transaction is <u>complete</u>.</li>
+                        <li><b>Initiation</b>: You enter details like the recipient's address and the amount.</li>
+                        <li><b>Signing</b>: You "sign" it with your private key, which is like a secret password. This proves it's really you.</li>
+                        <li><b>Broadcasting</b>: The signed transaction is sent out to the blockchain network.</li>
                     </ol>
+                    <span>Think of this as writing a check: you fill it out, sign it, and hand it to the bank.</span>
                 </td>
             </tr>
             <tr>
-                <td class="td-heading"><h4>A Closer Look</h4></td>
+                <td class="td-heading"><h4>Step 2: Propagation & Validation</h4></td>
                 <td>
-                    Validation is a critical step. This is not done by a central authority. <s>A bank approves it</s>. <del>An admin checks it</del>. It's the network itself that provides the trust.
-                    <pre>
-Transaction {
-  from: "UserA", to: "UserB",
-  amount: 1.23, signature: "..."
-}</pre>
+                    Once broadcast, the transaction spreads across the network. Nodes store it in a waiting area called the <b>mempool</b>. Each node verifies details, like if you have enough funds. This process is not <s>instantaneous</s>, and it is <del>controlled by a single server</del>. It is a <mark>distributed consensus</mark> process.
                 </td>
             </tr>
             <tr>
-                <td class="td-heading"><h5>Transaction is Final</h5></td>
+                <td class="td-heading"><h5>Step 3: Mining & Block Creation</h5></td>
                 <td>
-                    Once a transaction is in a block, it is <mark>permanent and cannot be altered</mark>. This is the immutability we talked about. This is a core feature, not a bug<sub>[1]</sub>.
+                    Special nodes (miners or validators) compete to group transactions into a "block." They solve tough puzzles to "win" the right to add the block. The network agrees on the block using rules like Proof of Work<sub>1</sub>.
+                    <pre>Transaction -> Mempool -> Block</pre>
                 </td>
             </tr>
             <tr>
-                <td class="td-heading"><h6>Key Terms</h6></td>
+                <td class="td-heading"><h6>Step 4: Confirmation</h6></td>
                 <td>
-                    A simple table of terms:
+                    Finally, the transaction is official. The block is added to the blockchain, making the transaction immutable. Miners get transaction fees for their work.
+                    <ul>
+                        <li>This process makes blockchain trustworthy.</li>
+                        <li>No central boss, lots of checks, and public yet secure.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-heading">Key Terms</td>
+                <td>
+                    A small table of terms:
                     <table border="1">
                         <tr><th>Term</th><th>Meaning</th></tr>
-                        <tr><td>Node</td><td>A computer connected to the blockchain network.</td></tr>
-                        <tr><td>Digital Signature</td><td>A cryptographic way to prove ownership.</td></tr>
+                        <tr><td>Mempool</td><td>A waiting area for transactions.</td></tr>
+                        <tr><td>Private Key</td><td>A secret password for signing.</td></tr>
                     </table>
                 </td>
             </tr>
             <tr>
                 <td class="td-heading">Media Example</td>
                 <td>
-                    <img src="https://via.placeholder.com/600x400.png?text=Transaction+Flow" alt="Placeholder image of a transaction flow">
+                    <img src="https://via.placeholder.com/600x400.png?text=Transaction+Lifecycle" alt="Placeholder image of a transaction lifecycle">
                     <br><br>
                     <video controls width="400">
                         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -77,20 +83,16 @@ Transaction {
                     </video>
                 </td>
             </tr>
-            <tr>
-                <td class="td-heading">More Info</td>
-                <td>
-                    <ul>
-                        <li><span>This entire process is what makes the system secure.</span></li>
-                        <li>Want to learn more? Here is an <a href="https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-transaction" target="_blank">external article</a>.</li>
-                    </ul>
-                </td>
-            </tr>
         </table>
+
+        <div class="page-navigation">
+            <a href="what-is-blockchain.html" class="back">&laquo; Back</a>
+            <a href="three-pillars.html" class="next">Next &raquo;</a>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Blockchain Learning Center</p>
+        <p>&copy; 2025 Blockchain Learning Center | <a href="mailto:sample@gmail.com">Contact Us</a></p>
     </footer>
 
 </body>

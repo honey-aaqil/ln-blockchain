@@ -23,58 +23,53 @@
 
     <div class="main-content">
         <h2>Blockchain vs. Traditional Databases</h2>
+        <p>While both handle information, they're built for different worlds. Traditional databases are like a <i>central filing cabinet</i>, while blockchain is a <u>shared, unbreakable notebook</u>.</p>
 
         <table class="content-table">
             <tr>
-                <td class="td-heading"><h3>The Core Comparison</h3></td>
+                <td class="td-heading"><h3>Core Architecture</h3></td>
                 <td>
-                    <p>The main difference lies in <b>control and data structure</b>. <i>A traditional database is centralized, while a blockchain is decentralized.</i></p>
+                    Traditional databases use a <b>centralized</b> setup. Blockchain is <b>decentralized</b>, spreading data across many computers. This is a <mark>key difference</mark>. <s>It's a minor detail.</s> <del>It doesn't affect security.</del> It absolutely does.
+                </td>
+            </tr>
+            <tr>
+                <td class="td-heading"><h4>Data Handling</h4></td>
+                <td>
+                    Databases allow full CRUD<sub>(Create, Read, Update, Delete)</sub> operations. Blockchain only supports Read and Write; once data is added, it's locked in forever (immutable).
+                    <pre>Database: UPDATE users SET name = 'Jules' WHERE id = 1;</pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="td-heading"><h5>Key Comparison</h5></td>
+                <td>
                     <table border="1">
-                        <tr>
-                            <th>Feature</th>
-                            <th>Traditional Database (e.g., SQL)</th>
-                            <th>Blockchain</th>
-                        </tr>
-                        <tr>
-                            <td>Architecture</td>
-                            <td>Centralized (Client-Server)</td>
-                            <td>Decentralized (Peer-to-Peer)</td>
-                        </tr>
-                        <tr>
-                            <td>Data Mutability</td>
-                            <td>Mutable (CRUD<sub>1</sub> operations)</td>
-                            <td>Immutable (Append-only)</td>
-                        </tr>
+                        <tr><th>Aspect</th><th>Traditional Database</th><th>Blockchain</th></tr>
+                        <tr><td>Control</td><td>Centralized (admin-managed)</td><td>Decentralized (network-managed)</td></tr>
+                        <tr><td>Data Changes</td><td>Can edit or delete (mutable)</td><td>Permanent once added (immutable)</td></tr>
+                        <tr><td>Speed</td><td>Fast queries and updates</td><td>Slower due to verification</td></tr>
                     </table>
                 </td>
             </tr>
             <tr>
-                <td class="td-heading"><h4>When to Use Which?</h4></td>
+                <td class="td-heading"><h6>When to Choose</h6></td>
                 <td>
-                    <p>A blockchain is not a replacement for all databases. <u>Choosing the right tool is important</u>.</p>
-                    <h5>Use a Database for:</h5>
+                    <span>Choose the right tool for the job:</span>
                     <ul>
-                        <li>High-speed transactions (e.g., e-commerce).</li>
-                        <li>Centralized data management.</li>
+                        <li><b>Databases</b> are great for most apps where speed and easy changes matter.</li>
+                        <li><b>Blockchain</b> excels in situations needing unbreakable trust.</li>
                     </ul>
-                    <h6>Use a Blockchain for:</h6>
+                    <br>
+                    Summary of when to use which:
                     <ol>
-                        <li>When trust is required between multiple parties.</li>
-                        <li>When you need a tamper-proof audit trail.</li>
+                        <li>For speed: Database</li>
+                        <li>For trust: Blockchain</li>
                     </ol>
-                </td>
-            </tr>
-            <tr>
-                <td class="td-heading">A Common Misconception</td>
-                <td>
-                    <p>It's a mistake to think a blockchain is just a bad database. <s>It's useless for data.</s> <del>It's too slow for everything.</del> The reality is that <mark>it's designed for security and trust, not speed</mark>.</p>
-                    <pre>// DB Record (Mutable) vs. Chain Transaction (Immutable)</pre>
                 </td>
             </tr>
             <tr>
                 <td class="td-heading">Media Example</td>
                 <td>
-                    <img src="https://via.placeholder.com/600x400.png?text=Data+Structure+Comparison" alt="Placeholder image of data structures">
+                    <img src="https://via.placeholder.com/600x400.png?text=Database+vs+Blockchain" alt="Placeholder image comparing databases and blockchain">
                     <br><br>
                     <video controls width="400">
                         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -82,17 +77,16 @@
                     </video>
                 </td>
             </tr>
-             <tr>
-                <td class="td-heading">More Info</td>
-                <td>
-                    <p><span>This distinction is key to innovation.</span> For more details, see this <a href="https://www.ibm.com/topics/blockchain-vs-database" target="_blank">article from IBM</a>.</p>
-                </td>
-            </tr>
         </table>
+
+        <div class="page-navigation">
+            <a href="three-pillars.html" class="back">&laquo; Back</a>
+            <a href="real-world-uses.html" class="next">Next &raquo;</a>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Blockchain Learning Center</p>
+        <p>&copy; 2025 Blockchain Learning Center | <a href="mailto:sample@gmail.com">Contact Us</a></p>
     </footer>
 
 </body>
