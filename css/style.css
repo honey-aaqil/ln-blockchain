@@ -205,3 +205,13 @@ th {
 .page-navigation .next-only {
     margin-left: auto; /* Pushes the 'Next' button to the far right if it's the only one */
 }
+
+
+.embed-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio → height ÷ width × 100 */
+  overflow: hidden;
+  background: #000; /* optional: placeholder background */
+  border-radius: 8px; /* optional: rounded corners */
+}
