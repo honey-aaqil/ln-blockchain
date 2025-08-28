@@ -51,7 +51,7 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 10px 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
@@ -66,7 +66,7 @@ nav ul li a:hover {
 .main-content {
     padding: 20px;
     background-color: #1e1e1e;
-    margin: 20px 10%;
+    margin: 20px 2.5%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
